@@ -146,14 +146,18 @@ console.log("Excercice 18",minHour(1,10))
 
 //Excercice 19
 
-function inversTab(t) {
+function inversTab() {
   let tab = [1,8,3,12,8]
+  var Arr = new Array
   for (var i = tab.length - 1; i >= 0; i--) {
-    tab[i]
+    Arr.push(tab[i])
   }
-  return "le tableau est inversé comme suit: " + tab[i]
+  return "le tableau est inversé comme suit: " + Arr
+
 }
 console.log("Excercice 19",inversTab())
+
+
 
 //Excercice 20
 function minTab(t) {
@@ -164,3 +168,28 @@ function minTab(t) {
 console.log('Excercice 20',minTab())
 
 //Excercice 21
+
+function checkEq(x,y){
+  if ( x === y) {
+      result = true
+    }
+  else {
+      result = false
+    }
+    return("L'état des deux éléments "+ x + " et " + y + " est " + result + ".")
+  }
+  console.log("Excercice 21: " + checkEq('6',7))
+
+//Excercice 22
+function isEmpty(ch){
+  if (ch === " ") {
+      return ("L'état de la chaine " + ch + " est " + true + ".")
+  }
+  else {
+      return ("L'état de la chaine " + ch + " est " + false + ".")
+  }
+}
+console.log("Excercice 22: " + isEmpty("DORRA"))
+
+
+
